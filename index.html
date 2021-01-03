@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Priyendu Singh</title>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" style="width: 960px; height: 600px; background: #231F20"></canvas>
+    <script src="Build/Priyendu Singh.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/Priyendu Singh.data",
+        frameworkUrl: "Build/Priyendu Singh.framework.js",
+        codeUrl: "Build/Priyendu Singh.wasm",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "Dr.JaikalLabs",
+        productName: "Priyendu Singh",
+        productVersion: "1.0",
+      });
+    </script>
+  </body>
+</html>
